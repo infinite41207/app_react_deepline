@@ -1,0 +1,557 @@
+/* =============== Sections ================= */
+.dashboard-section {
+  background-color: #f8fafc !important;
+}
+
+.db-header {
+  height: 65px;
+}
+
+/* ================ Colors ================= */
+.output-content-bg-white {
+  background: #ffffff !important;
+}
+
+.output-content-bg-green {
+  background: #f0fdf4 !important;
+}
+
+/* ================ Text ================= */
+.db-heading-1 {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  color: #67757c !important;
+}
+
+.db-heading-2 {
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #67757c !important;
+}
+
+.output-content {
+  border: 1px solid #ced4da !important;
+  border-radius: 4.8px !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  word-break: break-word;
+  line-height: 21px !important;
+  color: #67757c !important;
+  white-space: pre-wrap;
+}
+
+.output-stats {
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 17px !important;
+  color: #94a3b8 !important;
+}
+
+.output-stats button span {
+  font-size: 9.13755px;
+  color: #94a3b8;
+}
+
+/* ================ Buttons ================ */
+.clear-btn {
+  border: 1.0625px solid #e2e8f0 !important;
+  box-shadow: 0px 1.0625px 2.125px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8.5px !important;
+  color: #67757c;
+  font-size: 0.9375rem;
+  font-family: "DM sans";
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 23px;
+}
+
+.db-submit-btn {
+  background: linear-gradient(
+    135deg,
+    #4300a3 0%,
+    #4d00aa 9.09%,
+    #5700b1 18.18%,
+    #6000b7 27.27%,
+    #6a00be 36.36%,
+    #7200c5 45.45%,
+    #7b00cb 54.55%,
+    #8300d2 63.64%,
+    #8c00da 72.73%,
+    #9500e2 81.82%,
+    #9e00e9 90.91%,
+    #a700f1 100%
+  );
+  color: white !important;
+  padding: 8px;
+  font-size: 0.9375rem;
+  border-radius: 8.5px;
+  border: none;
+  font-weight: 700;
+  font-family: "DM Sans";
+}
+
+.db-submit-btn:hover,
+.db-submit-btn:active {
+  color: white;
+}
+
+.right-active-btn {
+  background: #f1f5f9 !important;
+  border-radius: 3.2px !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: #5700b1 !important;
+  border: none !important;
+}
+
+.right-section-btn {
+  border: 1px solid #ced4da !important;
+  border-radius: 3.2px !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: #67757c !important;
+}
+
+/*================ Borders ================ */
+.bb-1px-link-water {
+  border-bottom: 1px solid #eaf2fb !important;
+}
+
+.bt-1px-link-water {
+  border-top: 1px solid #eaf2fb !important;
+}
+
+.br-1px-link-water {
+  border-right: 1px solid #eaf2fb !important;
+}
+
+/*=============== Output Dividrs =============== */
+.output-divider {
+  border-top: 1px solid #ced4da !important;
+}
+
+/*================ Form Inputs =========== */
+.db-form label {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #67757c !important;
+}
+
+.db-form input,
+textarea {
+  border: 1px solid #ced4da !important;
+  border-radius: 4.8px !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #67757c !important;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  color: #67757c !important;
+}
+
+.css-1dimb5e-singleValue {
+  color: #67757c !important;
+}
+
+.db-form input::placeholder,
+.db-form textarea::placeholder {
+  color: #adaac0 !important;
+}
+
+.number-of-outputs {
+  padding: 0 10px;
+  padding-right: 0;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 1.0625px 2.125px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8.5px !important;
+  color: #67757c;
+}
+
+.number-of-outputs span {
+  color: #67757c;
+  font-weight: 500;
+  font-size: 0.9175rem;
+  font-weight: 700;
+  font-family: "DM Sans";
+  text-transform: uppercase;
+}
+
+@media (max-width: 1280px) {
+  .number-of-outputs span,
+  .clear-btn {
+    font-size: 0.64rem;
+  }
+
+  .clear-btn {
+    min-height: 39px;
+  }
+
+  .number-of-outputs {
+    gap: 0;
+  }
+}
+
+.number-of-outputs input {
+  width: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "DM Sans";
+  color: #67757c;
+}
+
+.arrows span {
+  background: none;
+}
+
+.number-of-outputs .x-symbol {
+  color: #67757c;
+}
+
+.number-of-outputs .arrow-group {
+  align-items: center;
+  position: absolute;
+  right: 11px;
+  top: -11px;
+  top: -11px;
+}
+
+.number-of-outputs .arrow-group button {
+  padding: 0;
+  background: none;
+  border: none;
+  height: 15px;
+}
+
+@media (max-width: 1090px) {
+  .number-of-outputs {
+    padding-block: 7px;
+    padding-left: 5px !important;
+  }
+
+  .clear-btn {
+    padding-block: 7px;
+  }
+
+  .footer-buttons > div > button {
+    font-size: 0.63rem;
+  }
+
+  .number-of-outputs span {
+    font-size: 0.63rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .clear-btn {
+    padding: 6px 10px;
+  }
+
+  .number-of-outputs {
+    padding-left: 9px !important;
+    padding-block: 3px !important;
+  }
+}
+
+/* @media (max-width: 380px) {
+  .generate-btn-group .my-auto button {
+    width: 165px;
+    margin-left: -3px !important;
+  }
+}
+
+@media (max-width: 368px) {
+  .generate-btn-group .my-auto button {
+    margin-left: -9px !important;
+  }
+} */
+
+@media (max-width: 450px) {
+  .footer-buttons > div {
+    width: 49%;
+  }
+
+  .footer-buttons > div > div,
+  .footer-buttons > div > button {
+    width: 100%;
+  }
+
+  .generate-btn-group .my-auto {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  /* .footer-buttons {
+    margin-left: -10px;
+  } */
+  .x-symbol {
+    padding-bottom: 4px;
+  }
+
+  .css-b62m3t-container {
+    font-size: 13px;
+  }
+
+  /* .generate-btn-group .my-auto button {
+    width: 175px;
+    margin-left: 6px;
+  } */
+
+  .arrow-group {
+    right: -5px !important;
+  }
+
+  .number-of-outputs {
+    /* padding: 2px 11px; */
+    height: 40px;
+    /* width: 175px; */
+  }
+
+  .number-of-outputs input {
+    width: 25px;
+    padding-left: 5px;
+  }
+
+  /* .number-of-outputs .arrow-group button {
+    height: 7px;
+  } */
+}
+
+@media (max-width: 400px) {
+  .number-of-outputs input {
+    width: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .clear-btn {
+    font-size: 0.6rem;
+  }
+
+  .number-of-outputs span {
+    font-size: 0.6rem;
+  }
+}
+
+.generate-btn-group {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.models-output-section {
+  height: calc(100vh - 67px);
+}
+
+@media (max-width: 992px) {
+  .generate-btn-group {
+    position: fixed;
+    bottom: 3rem;
+  }
+}
+
+@media (max-height: 843px) and (max-width: 992px) {
+  /* .newoutput-form-groups {
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden; */
+  /* } */
+
+  /* .models-output-section {
+    height: 56vh;
+    overflow-y: auto;
+  } */
+  
+}
+
+@media (max-width: 990px) {
+  .models-output-section {
+    position: absolute;
+    top: 223px;
+  }
+}
+
+@media (max-height: 1200px) and (max-width: 992px) {
+  .models-output-section {
+    height: calc(100vh - 395px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-height: 740px) and (max-width: 992px) {
+  .models-output-section {
+    height: 43vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 992px) {
+  /* .newoutput-form-groups {
+    max-height: 53vh;
+    overflow-y: auto;
+  } */
+
+  .models-output-section {
+    height: 43vh;
+    overflow-y: auto;
+  }
+}
+
+.x-symbol {
+  margin-left: 9px !important;
+  padding-bottom: 4px;
+}
+
+/*=============== Text Length Range Slider Style (Custom) ============ */
+.text-length-range .rc-slider {
+  padding-top: 0px !important;
+  margin-bottom: 15px !important;
+}
+
+.text-length-range .range-count {
+  font-weight: 300 !important;
+  font-size: 13px !important;
+  color: #8f8fa0 !important;
+}
+
+.text-length-range .rc-slider-rail {
+  height: 25px !important;
+  background: #f9f9f9 !important;
+  border: 0.827558px solid #e4e6eb !important;
+  border-radius: 4.13779px !important;
+}
+
+.text-length-range .rc-slider-track {
+  background-color: transparent !important;
+}
+
+.text-length-range .rc-slider-handle {
+  width: 25px !important;
+  height: 25px !important;
+  background-color: #5401af !important;
+  border: none !important;
+  border-radius: 0% !important;
+  margin-top: 0px !important;
+}
+
+.text-length-range .rc-slider-handle-dragging {
+  box-shadow: none !important;
+}
+
+/*=============== Tone of Voice Select Styling (Custom) ============ */
+.css-1u9des2-indicatorSeparator {
+  width: 0px !important;
+}
+
+.css-13cymwt-control {
+  background: #ffffff !important;
+  border: transparent !important;
+  border-radius: 4.8px !important;
+  box-shadow: 0px !important;
+  outline: transparent !important;
+}
+
+.css-t3ipsp-control {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.css-13cymwt-control {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.css-1nmdiq5-menu {
+  margin-left: -2px;
+  margin-top: 0 !important;
+  z-index: 1100 !important;
+}
+
+.css-b62m3t-container {
+  padding: 0px 2px !important;
+}
+
+/*=============== History Content Section Styling (Custom) ============ */
+/* ============== History Content Section (Right Side) ============= */
+.history-content-section {
+  background: #ffffff;
+  border: 1px solid #e4e6eb !important;
+  border-radius: 8px !important;
+}
+
+.history-content-section.active {
+  background: #f0fdf4;
+}
+
+/* ============= History Content Title (Right Side) ============== */
+.history-content-title {
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #101828 !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 375px;
+  text-align: left;
+}
+
+.re-writting-text {
+  border: 1px solid #ced4da;
+  border-radius: 4.8px;
+  min-height: 100px;
+}
+
+@media (max-width: 992px) {
+  .history-content-title {
+    max-width: 140px !important;
+  }
+}
+
+/* ============= History Content Created Date Time (Right Side) ============== */
+.history-content-date-time {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #475467 !important;
+  min-width: 75px;
+}
+
+/* ============= History Content Output Section (Left Side) ============== */
+.history-output-title {
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  color: #101828 !important;
+}
+
+/* ======== Apply Transformation Animation On History Content Load ======= */
+.flipped {
+  position: relative;
+  animation: myfirst 0.8s ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  /* 0%   { left: 300px; top: 0px;}
+      50%  {left: 0px; top: 0px;} */
+  0% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.tone-selector.invalid {
+  border: 1px solid red;
+}
+
+textarea {
+  overflow-y: auto !important;
+}

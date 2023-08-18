@@ -1,0 +1,18 @@
+.dark-mode {
+  background: #F9F9F9;
+  padding: 40px;
+  .title {
+    color: #17171a;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .desc {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 25px;
+    color: #0f0f11;
+  }
+}

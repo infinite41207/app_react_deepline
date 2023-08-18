@@ -1,0 +1,204 @@
+.page-invoice {
+  > div:first-child {
+    background: #f8fafc;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+    @media (max-width: 992px) {
+      height: 20vh !important;
+    }
+    > div:nth-child(2) {
+      .privacy-badge {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        color: rgba(26, 31, 54, 0.621875);
+      }
+      label {
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #1a1f36;
+      }
+      a {
+        font-weight: 500;
+        font-size: 13.4531px;
+        line-height: 18px;
+        color: #45565e;
+        text-align: center;
+      }
+    }
+  }
+
+  > div:last-child {
+    .spinner-border {
+      position: absolute;
+      left: 45%;
+    }
+    .cancel-card {
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: #17171a;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 25px;
+        color: #0f0f11;
+      }
+      button {
+        background: #ff7846;
+        box-shadow: 0px 1.0625px 2.125px rgba(0, 0, 0, 0.05);
+        border-radius: 8.5px;
+        color: #fff;
+      }
+    }
+    .card-box {
+      background: #f9f9f9;
+      > label {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 25px;
+        color: #17171a;
+      }
+      .credit-heading {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #17171a;
+      }
+
+      > p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: #0f0f11;
+      }
+
+      .credit-detail {
+        > span:first-child {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+          color: #0f0f11;
+        }
+
+        > span:last-child {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 25px;
+          color: #0f0f11;
+        }
+      }
+      .default-badge {
+        background: #ffe4dc;
+        border-radius: 4px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #4f566b;
+        padding-block: 3px;
+      }
+      .card-image {
+        border-radius: 4px;
+      }
+      .remove-card {
+        background: none;
+      }
+      .add-payment-btn {
+        border: 1px solid #697386;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #697386;
+        svg {
+          margin-right: 5px;
+        }
+      }
+      .email {
+        span {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #697386;
+        }
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration: none;
+          color: #1a1f36;
+        }
+      }
+      .update-info {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #697386;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+    .plan-name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: #ff7846;
+    }
+    .pay-date {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1a1f36;
+    }
+    .update-history-btn {
+      background: none;
+    }
+    .pay-amount {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1a1f36;
+    }
+    .paid-badge {
+      background: #cbf4c9;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 3px 7px;
+      color: #0e6245;
+    }
+    .trial-name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1a1f36;
+    }
+    .view-more-btn {
+      background: none;
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #697386;
+      }
+    }
+  }
+}

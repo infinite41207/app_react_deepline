@@ -1,0 +1,162 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.invite-backdrop {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  height: 100vh;
+  position: absolute;
+  z-index: 100000;
+  background: rgba(20, 4, 51, 0.3);
+  backdrop-filter: blur(6.5px);
+}
+
+.react-multi-email {
+  background: #f5f8fb !important;
+  border: none !important;
+  border-radius: 6px !important;
+  .data-labels > div {
+    background: #e4ebf1 !important;
+    border-radius: 6px !important;
+    padding: 5px 12px;
+    margin-left: 0 !important;
+  }
+  input {
+    background: #f5f8fb !important;
+  }
+  div {
+    color: #0f172a !important;
+  }
+}
+
+.invite-container {
+  @media (max-width: 620px) {
+    width: 90%;
+  }
+  transition: 0.5s ease-in-out;
+  animation: fadeIn forwards 0.2s ease-in;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200000;
+  max-width: 600px;
+  box-shadow: 0px 0px 0px 1px rgba(203, 213, 225, 0.5),
+    0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  .no-members {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #94a3b8;
+  }
+  .heading {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 24px;
+    color: #0f172a;
+  }
+  .desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748b;
+  }
+  .invite-input-group {
+    background: #f5f8fb !important;
+    border: none !important;
+    padding-right: 135px;
+    position: relative;
+    border-radius: 6px !important;
+    button {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      background: linear-gradient(
+        135deg,
+        #4300a3 0%,
+        #4d00aa 9.09%,
+        #5700b1 18.18%,
+        #6000b7 27.27%,
+        #6a00be 36.36%,
+        #7200c5 45.45%,
+        #7b00cb 54.55%,
+        #8300d2 63.64%,
+        #8c00da 72.73%,
+        #9500e2 81.82%,
+        #9e00e9 90.91%,
+        #a700f1 100%
+      );
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .team {
+    .heading {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #0f172a;
+    }
+    .member {
+      .name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0f172a;
+      }
+      .email {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #64748b;
+      }
+    }
+  }
+  .invite-link {
+    .heading {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #0f172a;
+    }
+    .desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #64748b;
+    }
+    .link {
+      font-size: 12px;
+      line-height: 24px;
+      color: #475569;
+      background: #f5f8fb;
+      border: 0.9px solid #e2e8f0;
+      box-shadow: 0px 0.9px 1.9px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+    }
+    button {
+      background: #ffffff;
+      border: 0.9px solid #e2e8f0;
+      box-shadow: 0px 0.9px 1.9px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      width: 41px !important;
+      height: 41px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

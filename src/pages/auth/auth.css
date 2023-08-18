@@ -1,0 +1,125 @@
+/* Login Form Max width */
+/* .login-maxWidth{
+    max-width: 304px;
+}
+.verify-maxWidth{
+    max-width: 402px;
+} */
+
+/* ================ Signup Secondary Section Mask ================ */
+.secondary-section{
+    background: #F1F5F9;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ============ Thread Section ============= */
+.signup-thread1{
+    z-index: 1;
+    margin-top: 55px;
+}
+.signup-thread2{
+    z-index: 2;
+}
+.signup-text1{
+    z-index: 3;
+    margin-top: -120px;
+    margin-right: 410px;
+}
+.signup-girl{
+    z-index: 4;
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+.signup-text2{
+    z-index: 4;
+    margin-top: 210px;
+    margin-left: 425px;
+}
+
+/*=============== Auth Buttons ============= */
+.auth-btn-blue-gradient-1{
+    background: linear-gradient(135deg, #4300A3 0%, #4D00AA 9.09%, #5700B1 18.18%, #6000B7 27.27%, #6A00BE 36.36%, #7200C5 45.45%, #7B00CB 54.55%, #8300D2 63.64%, #8C00DA 72.73%, #9500E2 81.82%, #9E00E9 90.91%, #A700F1 100%), #500AD2;
+    color: var(--color-white) !important;
+    border-radius: 6.63148px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    padding: 10px 25px !important;
+}
+.submit-button{
+    border: 0.947354px solid #CBD5E1 !important;
+    box-shadow: 0px 0.947354px 1.89471px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 6.63148px !important;
+    font-weight: 600 !important;
+    font-size: 13.263px !important;
+    color: #334155 !important;
+}
+
+/*================ Text ================= */
+.form-title{
+    font-weight: 800 !important;
+    font-size: 24.868px !important;
+    color: #0F172A !important;
+}
+
+.form-description,
+.form-divider-text{
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    color: #475569 !important;
+}
+
+.form-footer-text{
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    color: #94A3B8;
+}
+.form-footer-text a{
+    text-decoration: none !important;
+    color: #FF7846 !important;
+}
+
+.verify-label-email{
+    font-weight: 600 !important;
+    font-size: 12.8765px !important;
+    color: #FF7846 !important;
+}
+
+.verify-form-footer button,.verify-form-footer a{
+    font-weight: 400 !important;
+    font-size: 12.8765px !important;
+    color: #64748B !important;
+    outline: none !important;
+}
+
+/*================ Dividers ================= */
+.form-divider{
+    border-top: 1px solid #CBD5E1;
+}
+
+/*================ Form Inputs =============== */
+.auth-form label{
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    color: #334155 !important;
+}
+.auth-form input{
+    border: 0.947354px solid #E2E8F0 !important;
+    box-shadow: 0px 0.947354px 1.89471px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 4.97361px !important;
+    font-weight: 400 !important;
+    font-size: 13.263px !important;
+    line-height: 20px !important;
+    color: #334155 !important;
+}
+.verify-form{
+    background: #F8FAFC !important;
+    box-shadow: 0px 0px 0px 1.05115px #E2E8F0 !important;
+    border-radius: 8px !important;
+}
+
+/* ================ Images ================ */
+.verified-check{
+    margin-top: 17px;
+    margin-right: 7px;
+}

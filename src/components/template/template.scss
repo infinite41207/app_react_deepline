@@ -1,0 +1,220 @@
+.output-form-wrapper {
+  overflow-y: auto;
+  height: 100%;
+  max-height: calc(100vh - 125px); //100vh - generate-btn-group;
+
+  @media (max-width: 992px) {
+    max-height: calc(
+      100vh - 116px - 50px
+    ); //100vh - generate-btn-group - nav-footer;
+  }
+
+  @media (max-width: 768px) {
+    max-height: calc(
+      100vh - 100px - 50px
+    ); //100vh - generate-btn-group - nav-footer;
+  }
+
+  .newoutput-form-groups {
+    padding-bottom: 50px;
+    @media (max-width: 993px) {
+      padding-bottom: 130px;
+    }
+
+    .tone-selector__placeholder {
+      white-space: nowrap;
+    }
+
+    .tone-selector__menu-list {
+      max-height: 160px;
+      @media (max-width: 768px) {
+        max-height: 150px;
+      }
+    }
+  }
+}
+
+.histories-section {
+  position: relative;
+  height: 95vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    position: fixed;
+    width: 300px;
+    transform: translateX(120%);
+    transition: 0.5s ease-in-out;
+    padding: 15px;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    height: calc(100vh - 50px);
+
+    &.collapsed {
+      transform: translateX(0%);
+      width: 100%;
+    }
+  }
+}
+
+.histories-output-section {
+  height: calc(100vh - 95px);
+
+  & > div:nth-child(2) {
+    min-height: calc(100% - 24px - 1.5rem);
+  }
+
+  @media (max-width: 992px) {
+    height: calc(100vh - 115px);
+  }
+}
+
+.model-section {
+  z-index: 99;
+  background: #f8fafc;
+
+  @media (min-width: 992px) {
+    border: 1px solid #ced4da;
+  }
+}
+
+.output-stats {
+  @media (max-width: 1270px) {
+    flex-direction: row !important;
+  }
+
+  & > div:nth-child(2) {
+    @media (max-width: 1440px) {
+      margin: 10px 0 !important;
+      align-self: flex-end;
+    }
+  }
+}
+
+.output-stats button {
+  @media (min-width: 1368px) {
+    background: #ffffff;
+    border: 1px solid #d5d9df !important;
+    border-radius: 6px;
+    padding: 5px 10px 4px !important;
+  }
+  span {
+    @media (max-width: 1368px) {
+      display: none !important;
+    }
+  }
+}
+
+.nothing-check {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    height: 80%;
+  }
+
+  img {
+    max-width: 200px;
+  }
+
+  h5 {
+    color: #1b1b1b;
+    margin-top: 25px;
+  }
+
+  p {
+    line-height: 23.2px;
+    color: #67757c;
+    font-weight: 500;
+  }
+
+  button {
+    width: 295px;
+    height: 44px;
+    text-transform: uppercase;
+    color: #334155;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 0.935rem;
+    border: 1.0625px solid #e2e8f0;
+    box-shadow: 0px 1.0625px 2.125px rgba(0, 0, 0, 0.05);
+    border-radius: 8.5px;
+    background: #ffffff;
+    margin-top: 25px;
+  }
+}
+
+.animate__animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes shakeX {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-6px, 0, 0);
+    transform: translate3d(-6px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(6px, 0, 0);
+    transform: translate3d(6px, 0, 0);
+  }
+}
+@keyframes shakeX {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-6px, 0, 0);
+    transform: translate3d(-6px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(6px, 0, 0);
+    transform: translate3d(6px, 0, 0);
+  }
+}
+.animate__shakeX {
+  -webkit-animation-name: shakeX;
+  animation-name: shakeX;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: 1s;
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}

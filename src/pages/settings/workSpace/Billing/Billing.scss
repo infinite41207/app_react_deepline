@@ -1,0 +1,41 @@
+.bill-invoices {
+  background: #f9f9f9 !important;
+}
+
+.bill-bottom {
+  padding: 35px 40px;
+  border-radius: 8px;
+  background: linear-gradient(
+    140.92deg,
+    #4300a3 3.48%,
+    #4d00aa 11.92%,
+    #5700b1 20.37%,
+    #6000b7 28.81%,
+    #6a00be 37.25%,
+    #7200c5 45.7%,
+    #7b00cb 54.14%,
+    #8300d2 62.59%,
+    #8c00da 71.03%,
+    #9500e2 79.48%,
+    #9e00e9 87.92%,
+    #a700f1 96.36%
+  );
+
+  &.bg-white {
+    background: white;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  button {
+    color: #45565e;
+    padding: 7px 15px;
+
+    &.bg-coral {
+      background: var(--color-coral);
+    }
+  }
+}

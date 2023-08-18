@@ -1,0 +1,436 @@
+@import "~bootstrap/scss/bootstrap";
+.settings-right-section {
+  padding: 60px 25px;
+  height: 100vh;
+  overflow-y: auto;
+
+  .heading-title {
+    color: #17171a;
+    font-size: 1.875rem;
+    font-family: "Inter";
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+  .btn-groups {
+    width: auto;
+    @media (max-width: 520px) {
+      width: 100%;
+    }
+  }
+
+  .heading-desc {
+    font-size: 1rem;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #45565e;
+  }
+
+  .heading-2 {
+    font-family: "Inter";
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 85px;
+  }
+}
+
+button {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &.btn-coral {
+    position: relative;
+    color: white;
+    background-color: var(--color-coral);
+    border-radius: 8.5px;
+    box-shadow: 0px 1.0625px 2.125px rgba(0, 0, 0, 0.05);
+
+    .spinner-border {
+      position: absolute;
+      left: 45%;
+    }
+  }
+
+  &.btn-grey {
+    background-color: #ffffff;
+    color: #45565e;
+    box-shadow: 0px 1.0625px 2.125px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.profile-settings-form {
+  max-width: 650px;
+
+  label {
+    font-size: 0.875rem;
+    color: #67757c;
+    font-family: "Inter";
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  input {
+    border: 1px solid #ced4da;
+    border-radius: 4.8px;
+    font-size: 0.875rem;
+    padding: 8px 12px;
+
+    &::placeholder {
+      color: rgba(103, 117, 124, 0.4);
+    }
+  }
+
+  button {
+    padding: 8px 28px;
+  }
+}
+
+.del-account-card {
+  padding: 40px;
+  background-color: #f9f9f9;
+
+  p {
+    font-size: 0.875rem;
+    line-height: 25px;
+    color: #0f0f11;
+  }
+
+  @include media-breakpoint-down(sm) {
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.del-account-verify {
+  .form-title {
+    font-size: 27px !important;
+    letter-spacing: -0.69px;
+  }
+}
+
+.del-account-confirmed {
+  padding: 70px 0;
+
+  .confirmed-title {
+    font-size: 1.875rem;
+    color: #0f172a;
+    margin-top: 40px;
+    font-family: "Inter";
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.user-rol-btns {
+  font-size: 0.75rem;
+  font-family: "Inter";
+  font-weight: 500;
+  padding: 5px 10px;
+  color: #67757c;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 3.2px;
+
+  &.active {
+    color: #fff;
+    background-color: #ff7846;
+    border-radius: 3.6px;
+    border: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.usage-section {
+  .usage-deadline {
+    color: var(--color-coral);
+    font-weight: 700;
+    font-family: "Inter";
+  }
+
+  .usage-notice {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    > div {
+      padding: 2px !important;
+    }
+  }
+
+  .usage-info {
+    background: #f9f9f9;
+    padding: 25px;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+
+    &:hover {
+      background: #ffe4dc;
+    }
+
+    h4 {
+      font-family: "Inter";
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #17171a;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-family: "Inter";
+      line-height: 68px;
+      color: #17171a;
+      font-weight: 600;
+      @media (max-width: 1190px) {
+        font-size: 3.3rem;
+      }
+      @media (max-width: 1152px) {
+        font-size: 3.1rem;
+      }
+      @media (max-width: 1100px) {
+        font-size: 2.6rem;
+      }
+    }
+    p {
+      font-size: 0.875rem;
+      color: #0f0f11;
+      font-weight: 300;
+    }
+
+    .progress-bar {
+      position: relative;
+      width: 100%;
+      height: 5.4px;
+      background: #e2e8f0;
+
+      .progress-bar-inner {
+        position: absolute;
+        height: 5.4px;
+        top: 0;
+        left: 0;
+        border-radius: 10rem;
+        background: linear-gradient(90deg, #ffa010 0%, #ff1edb 100%);
+        transition: all 0.5s ease;
+      }
+    }
+
+    .subscription-starter {
+      font-size: 1.125rem;
+
+      .active {
+        width: 43px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ff7846;
+        font-size: 10px;
+        font-weight: 600;
+        color: #ff7846;
+        border-radius: 18px;
+        text-transform: capitalize;
+      }
+    }
+
+    .edit-buttons {
+      @media (max-width: 1368px) {
+        flex-direction: column !important;
+      }
+      button {
+        font-size: 0.875rem;
+        font-family: "Roboto";
+        color: #45565e;
+        padding: 10px 20px;
+        border: 1.0625px solid #e2e8f0;
+        border-radius: 8.5px;
+        background: #ffffff;
+        @media (max-width: 1030px) {
+          padding-inline: 10px !important;
+        }
+
+        &.payment-detail {
+          background: #eff2f5;
+        }
+      }
+    }
+
+    .radio-group {
+      input[type="radio"] {
+        /* ...existing styles */
+        display: grid;
+        place-content: center;
+      }
+
+      input[type="radio"]::before {
+        content: "";
+        width: 11.5px;
+        height: 11.5px;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        background: linear-gradient(
+          135deg,
+          #4300a3 0%,
+          #4d00aa 9.09%,
+          #5700b1 18.18%,
+          #6000b7 27.27%,
+          #6a00be 36.36%,
+          #7200c5 45.45%,
+          #7b00cb 54.55%,
+          #8300d2 63.64%,
+          #8c00da 72.73%,
+          #9500e2 81.82%,
+          #9e00e9 90.91%,
+          #a700f1 100%
+        );
+      }
+
+      input[type="radio"]:checked::before {
+        transform: scale(1);
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+
+  .chart-section {
+    overflow-x: auto;
+    .recharts-wrapper {
+      width: 100% !important;
+    }
+    svg {
+      width: 100%;
+      min-width: 900px;
+    }
+  }
+}
+
+.teams {
+  overflow-x: auto;
+  margin-top: 2rem;
+
+  .team-search {
+    position: relative;
+    max-width: 320px;
+
+    .search-icon {
+      position: absolute;
+      top: 6px;
+      left: 20px;
+
+      svg {
+        color: #94a3b8;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .slash-icon {
+      position: absolute;
+      top: 5px;
+      right: 7px;
+    }
+
+    input {
+      border: 1px solid #e4e6eb;
+      border-radius: 0.5rem;
+      padding: 8px 45px;
+      font-size: 0.875rem;
+      font-family: "Inter";
+      background: #f9f9f9;
+      font-weight: 400;
+      width: 100%;
+      &::placeholder {
+        color: #94a3b8;
+      }
+    }
+  }
+
+  table {
+    &.usage {
+      width: 950px;
+      overflow-x: auto;
+    }
+
+    th {
+      color: #67757c;
+      font-weight: 500;
+      font-family: "Inter";
+
+      &:not(:first-child) {
+        text-align: center;
+      }
+    }
+
+    td {
+      vertical-align: middle;
+      font-size: 0.875rem;
+      color: #45565e;
+      text-align: center;
+      vertical-align: middle;
+
+      .user-avatar {
+        width: 40px;
+        height: 40px;
+      }
+
+      .username {
+        font-weight: 500;
+        color: #45565e;
+        font-size: 1rem;
+      }
+
+      .useremail {
+        color: #67757c;
+        font-size: 13px;
+      }
+
+      input {
+        border: 1px solid #ced4da;
+        padding: 3px 7px;
+        color: rgba(103, 117, 124, 0.4);
+        font-size: 0.875rem;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #eaf2fb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .no-member {
+    color: #94A3B8;
+    border-bottom: none;
+  }
+
+  &.teams {
+    th,
+    td {
+      // text-align: left !important;
+    }
+  }
+
+  @media (min-width: 998px) {
+    margin-top: 5rem;
+  }
+}

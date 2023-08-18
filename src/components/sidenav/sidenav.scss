@@ -1,0 +1,302 @@
+@import "~bootstrap/scss/bootstrap";
+
+/* =============== Sections ================= */
+
+.side-nav {
+  position: relative;
+  height: 100vh;
+  z-index: 9999;
+  transition: 0.5s ease-in-out;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+
+  &.collapsed {
+    transform: translateX(0);
+  }
+
+  @media (max-width: 992px) {
+    position: fixed;
+    transform: translateX(-120%);
+    height: 100%;
+    overflow-y: auto;
+    width: 100% !important;
+    padding-bottom: 60px;
+    > div:first-child {
+      justify-content: center !important;
+      button {
+        display: none !important;
+      }
+    }
+    > div:nth-child(2) {
+      order: 1;
+      a > div {
+        justify-content: center !important;
+      }
+      svg {
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
+      }
+    }
+    .accordion-header {
+      display: none !important;
+    }
+    .accordion-body {
+      > a {
+        // justify-content: center !important;
+        border-top: 1px solid #e2e8f0 !important;
+        border-radius: 0 !important;
+        padding: 10px 0 !important;
+        > div:last-child {
+          font-size: 16px !important;
+          line-height: 20px !important;
+          color: #45565e;
+        }
+        > div:nth-child(2) {
+          display: flex !important;
+        }
+      }
+      > a > div:first-child {
+        display: none !important;
+      }
+    }
+    .links-section a {
+      margin-top: 0.25rem !important;
+    }
+    .user-section {
+      padding-left: 0 !important;
+      #user {
+        background: #ffffff !important;
+        border: 1.67937px solid #e2e8f0 !important;
+        border-radius: 6.71748px !important;
+        > div {
+          justify-content: center !important;
+        }
+        > div:nth-child(2) {
+          display: none !important;
+        }
+      }
+    }
+    .credit-section {
+      text-align: center;
+      & > div:first-child {
+        justify-content: center;
+      }
+      .credit-heading {
+        img {
+          margin-top: -5px;
+        }
+        font-weight: 600 !important;
+      }
+    }
+  }
+
+  .sidenav-collapse {
+    overflow-x: hidden;
+  }
+
+  @media (max-height: 820px) {
+    .sidenav-collapse {
+      max-height: 25vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+.navbar-brand {
+  font-size: 19px !important;
+}
+.credit-section {
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+}
+.user-section {
+  // position: sticky !important;
+  // bottom: 15px !important;
+  background-color: #f8fafc !important;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 5.4px;
+  background: #e2e8f0 !important;
+}
+
+.progress-bar .progress-bar-inner {
+  position: absolute;
+  height: 5.4px;
+  top: 0;
+  left: 0;
+  border-radius: 10rem;
+  background: linear-gradient(90deg, #ffa010 0%, #ff1edb 100%);
+  transition: all 0.5s ease;
+}
+
+.nav-header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0px 2px 4.21374px rgba(227, 232, 237, 0.5);
+
+  button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e4e6eb;
+    background: white;
+    border-radius: 6px;
+  }
+
+  .nav-header-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #252525;
+    text-transform: capitalize;
+  }
+}
+
+.nav-footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  z-index: 99999;
+  box-shadow: 0px -2.10687px 4.21374px rgba(227, 232, 237, 0.5);
+
+  button svg {
+    width: 18px;
+    height: 19px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    box-shadow: none !important;
+  }
+
+  button {
+    background: white;
+  }
+}
+
+/* ================ Text ================= */
+.sidenav-heading-1 {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #45565e !important;
+}
+.sidenav-subheading-1 {
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  color: #45565e !important;
+}
+.user-head {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #334155 !important;
+}
+.credit-heading-1 {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #000000 !important;
+}
+.progress-status {
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  color: #64748b !important;
+}
+.progress-link a {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: #001eb7 !important;
+}
+.links-section {
+  // position: absolute;
+  // bottom: 0;
+  min-width: 303px;
+}
+.links-section a {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: #475569 !important;
+}
+
+/* ================ Buttons ================ */
+.plus-btn {
+  background: #ff7846 !important;
+  border-radius: 4.48438px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+}
+.invitation-btn {
+  font-weight: 500 !important;
+  font-size: 13.4531px !important;
+  line-height: 18px !important;
+  color: #c7c9cb !important;
+  border: 1.12109px solid #c7c9cb !important;
+  border-radius: 4.48438px !important;
+}
+
+.invitation-btn img {
+  filter: brightness(0.8);
+}
+
+.dropdown-toggle::after {
+  margin: 0px !important;
+  border: none !important;
+}
+.logout-btn {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #000ff0 !important;
+}
+.logout-menu {
+  list-style: none;
+  position: absolute;
+  padding: 12px 18px;
+  left: 0;
+  top: -140%;
+  background: #ffffff !important;
+  border: 1px solid #e4e6eb !important;
+  border-radius: 8px !important;
+}
+
+/*================= Accordian ================= */
+.side-nav .accordion-button::after,
+.side-nav-small .accordion-button::after {
+  background-image: url("../../assets/images/dashboard/collapse.svg") !important;
+  background-size: 13px 100% !important;
+  width: 13px !important;
+  transform: rotate(180deg) !important;
+}
+.side-nav .accordion-button:not(.collapsed)::after,
+.side-nav-small .accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/images/dashboard/collapse.svg") !important;
+  background-size: 13px 100% !important;
+  width: 13px !important;
+  transform: rotate(0deg) !important;
+}
+.side-nav .accordion-button:not(.collapsed),
+.side-nav .accordion-button:not(.collapse),
+.side-nav-small .accordion-button:not(.collapsed),
+.side-nav-small .accordion-button:not(.collapse) {
+  background-color: transparent !important;
+}
+.accordion-item {
+  background-color: transparent !important;
+}
